@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+    <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .chart-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin-left: 170px;
+        }
+    </style>
+</head>
+<body >
+<div class="head clearfix">
+    <h1 class="pulll_left">云构经纬</h1>
+    <div class="menu menu2 pulll_left">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="sale_compare(1).html">新旧能源汽车销量对比</a></li>
+            <li><a href="bar_battery.html">电池容量</a></li>
+            <li><a href="bar_km.html">续航情况</a></li>
+            <li><a href="bar_time.html">百公里加速</a></li>
+            <li><a href="find.html">智能推荐</a></li>
+            <li><a href="login.html">退出登录</a></li>
+        </ul>
+    </div>
+    <div class="time" id="showTime">2018/6/12 17:00:12</div>
+
+</div>
+<div id="21d48840df3b4460aded2bccadbd9d39" class="chart-container" style="width:900px; height:500px;"></div>
+<script>
+    var chart_21d48840df3b4460aded2bccadbd9d39 = echarts.init(
+        document.getElementById('21d48840df3b4460aded2bccadbd9d39'), 'white', {renderer: 'canvas'});
+    var option_21d48840df3b4460aded2bccadbd9d39 = {
+        "animation": true,
+        "animationThreshold": 2000,
+        "animationDuration": 1000,
+        "animationEasing": "cubicOut",
+        "animationDelay": 0,
+        "animationDurationUpdate": 300,
+        "animationEasingUpdate": "cubicOut",
+        "animationDelayUpdate": 0,
+        "aria": {
+            "enabled": false
+        },
+        "color": [
+            "#5470c6",
+            "#91cc75",
+            "#fac858",
+            "#ee6666",
+            "#73c0de",
+            "#3ba272",
+            "#fc8452",
+            "#9a60b4",
+            "#ea7ccc"
+        ],
+        "series": [
+            {
+                "type": "bar",
+                "name": "\u4f20\u7edf\u6c7d\u8f66",
+                "legendHoverLink": true,
+                "data": [
+                    7476939,
+                    7565732,
+                    1341710
+                ],
+                "realtimeSort": false,
+                "showBackground": false,
+                "stackStrategy": "samesign",
+                "cursor": "pointer",
+                "barMinHeight": 0,
+                "barCategoryGap": "20%",
+                "barGap": "30%",
+                "large": false,
+                "largeThreshold": 400,
+                "seriesLayoutBy": "column",
+                "datasetIndex": 0,
+                "clip": true,
+                "zlevel": 0,
+                "z": 2,
+                "label": {
+                    "show": true,
+                    "position": "top",
+                    "margin": 8,
+                    "formatter": "{c} \u8f86",
+                    "valueAnimation": false
+                },
+                "rippleEffect": {
+                    "show": true,
+                    "brushType": "stroke",
+                    "scale": 2.5,
+                    "period": 4
+                }
+            },
+            {
+                "type": "bar",
+                "name": "\u65b0\u80fd\u6e90\u6c7d\u8f66",
+                "legendHoverLink": true,
+                "data": [
+                    10451966,
+                    11583491,
+                    1834863
+                ],
+                "realtimeSort": false,
+                "showBackground": false,
+                "stackStrategy": "samesign",
+                "cursor": "pointer",
+                "barMinHeight": 0,
+                "barCategoryGap": "20%",
+                "barGap": "30%",
+                "large": false,
+                "largeThreshold": 400,
+                "seriesLayoutBy": "column",
+                "datasetIndex": 0,
+                "clip": true,
+                "zlevel": 0,
+                "z": 2,
+                "label": {
+                    "show": true,
+                    "position": "top",
+                    "margin": 8,
+                    "formatter": "{c} \u8f86",
+                    "valueAnimation": false
+                },
+                "rippleEffect": {
+                    "show": true,
+                    "brushType": "stroke",
+                    "scale": 2.5,
+                    "period": 4
+                }
+            }
+        ],
+        "legend": [
+            {
+                "right": "10%",
+                "textStyle":{
+                    "color": "white",
+                    "fontSize": 18,
+                },
+                "data": [
+                    "\u4f20\u7edf\u6c7d\u8f66",
+                    "\u65b0\u80fd\u6e90\u6c7d\u8f66"
+                ],
+                "selected": {},
+                "show": true,
+                "padding": 5,
+                "itemGap": 10,
+                "itemWidth": 25,
+                "itemHeight": 14,
+                "backgroundColor": "transparent",
+                "borderColor": "#ccc",
+                "borderRadius": 0,
+                "pageButtonItemGap": 5,
+                "pageButtonPosition": "end",
+                "pageFormatter": "{current}/{total}",
+                "pageIconColor": "#2f4554",
+                "pageIconInactiveColor": "#aaa",
+                "pageIconSize": 15,
+                "animationDurationUpdate": 800,
+                "selector": false,
+                "selectorPosition": "auto",
+                "selectorItemGap": 7,
+                "selectorButtonGap": 10
+            }
+        ],
+        "tooltip": {
+            "show": true,
+            "trigger": "item",
+            "triggerOn": "mousemove|click",
+            "axisPointer": {
+                "type": "line"
+            },
+            "showContent": true,
+            "alwaysShowContent": false,
+            "showDelay": 0,
+            "hideDelay": 100,
+            "enterable": false,
+            "confine": false,
+            "appendToBody": false,
+            "transitionDuration": 0.4,
+            "textStyle": {
+                "fontSize": 14
+            },
+            "borderWidth": 0,
+            "padding": 5,
+            "order": "seriesAsc"
+        },
+        "xAxis": [
+            {
+                "nameTextStyle": {  // 坐标轴名称颜色
+                    "color": "white"
+                },
+                "axisLabel": {      // 坐标轴刻度标签颜色
+                    "color": "white"
+                },
+                "name": "\u5e74\u4efd",
+                "show": true,
+                "scale": false,
+                "nameLocation": "end",
+                "nameGap": 15,
+                "gridIndex": 0,
+                "inverse": false,
+                "offset": 0,
+                "splitNumber": 5,
+                "minInterval": 0,
+                "splitLine": {
+                    "show": true,
+                    "lineStyle": {
+                        "show": true,
+                        "width": 1,
+                        "opacity": 1,
+                        "curveness": 0,
+                        "type": "solid"
+                    }
+                },
+                "animation": true,
+                "animationThreshold": 2000,
+                "animationDuration": 1000,
+                "animationEasing": "cubicOut",
+                "animationDelay": 0,
+                "animationDurationUpdate": 300,
+                "animationEasingUpdate": "cubicOut",
+                "animationDelayUpdate": 0,
+                "data": [
+                    "2023",
+                    "2024",
+                    "2025"
+                ]
+            }
+        ],
+        "yAxis": [
+            {
+                "nameTextStyle": {  // 坐标轴名称颜色
+                    "color": "white"
+                },
+                "axisLabel": {      // 坐标轴刻度标签颜色
+                    "color": "white"
+                },
+                "name": "\u9500\u91cf\uff08\u8f86\uff09",
+                "show": true,
+                "scale": false,
+                "nameLocation": "end",
+                "nameGap": 15,
+                "gridIndex": 0,
+                "inverse": false,
+                "offset": 0,
+                "splitNumber": 5,
+                "minInterval": 0,
+                "splitLine": {
+                    "show": true,
+                    "lineStyle": {
+                        "show": true,
+                        "width": 1,
+                        "opacity": 1,
+                        "curveness": 0,
+                        "type": "solid"
+                    }
+                },
+                "animation": true,
+                "animationThreshold": 2000,
+                "animationDuration": 1000,
+                "animationEasing": "cubicOut",
+                "animationDelay": 0,
+                "animationDurationUpdate": 300,
+                "animationEasingUpdate": "cubicOut",
+                "animationDelayUpdate": 0
+            }
+        ],
+
+        "title": [
+            {
+                "textStyle":{
+                    "color": "white",
+                    "fontSize": 24
+                },
+                "show": true,
+                "text": "\u4f20\u7edf\u6c7d\u8f66\u4e0e\u65b0\u80fd\u6e90\u6c7d\u8f66\u5e74\u9500\u91cf\u5bf9\u6bd4",
+                "target": "blank",
+                "subtarget": "blank",
+                "padding": 5,
+                "itemGap": 10,
+                "textAlign": "auto",
+                "textVerticalAlign": "auto",
+                "triggerEvent": false
+            }
+        ]
+    };
+    chart_21d48840df3b4460aded2bccadbd9d39.setOption(option_21d48840df3b4460aded2bccadbd9d39);
+</script>
+<script>
+    var t = null;
+    t = setTimeout(time,1000);//開始运行
+    function time()
+    {
+        clearTimeout(t);//清除定时器
+        dt = new Date();
+        var y=dt.getFullYear();
+        var mt=dt.getMonth()+1;
+        var day=dt.getDate();
+        var h=dt.getHours();//获取时
+        var m=dt.getMinutes();//获取分
+        var s=dt.getSeconds();//获取秒
+        document.getElementById("showTime").innerHTML = y+"/"+mt+"/"+day+" "+h+":"+m+":"+s+"";
+        t = setTimeout(time,1000); //设定定时器，循环运行
+    }
+
+</script>
+</body>
+</html>
